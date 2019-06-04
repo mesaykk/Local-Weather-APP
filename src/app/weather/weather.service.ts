@@ -30,7 +30,11 @@ export class WeatherService {
     ).pipe(
       map(data => this.transformToICurrentWeather(data))
     )
-    
+    let ruiparams = ''
+    if (typeof search === 'string'){
+      uriparams = `q=${search}`else {uriparams = `zip=${search}`}
+      if {country }
+    }
   }
 
   private transformToICurrentWeather(data: ICurrentWeatherData) : ICurrentWeather{
